@@ -1,0 +1,219 @@
+/*====> NAV */
+header .navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: white;
+}
+
+/*====> NAV TOGGLE BTN */
+header nav .togl-btn-box {
+  display: none;
+  order: 1;
+
+  & .navbar-toggler {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+/* ==> NAV LOGO BOX (2nd) */
+header nav .logo-box {
+  order: 1;
+  display: grid;
+  place-items: center;
+
+  & img {
+    width: 150px;
+  }
+}
+
+header nav .offcanvas {
+  order: 2;
+  flex-grow: 0 !important;
+}
+
+/* ==> NAV END BOX (3rd) */
+header nav .nav-endbox {
+  order: 4;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Convert nav container from flex to grid */
+header nav > .container {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  align-items: center;
+  min-height: 80px;
+  padding: 15px 12px;
+  border-bottom: 1px solid #c2c2c2;
+}
+
+/* Nav #rd Box BTN (login/ Connect Wallet) */
+header nav .prime-stroke-gr {
+  background: var(--gradient-A);
+}
+header nav .mob-btn {
+  display: none;
+}
+
+/*===========> NAV MENUES  */
+header nav .offcanvas-body .navbar-nav {
+  gap: 30px;
+}
+header nav .offcanvas-body .navbar-nav .nav-link {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--nav-ele);
+}
+header nav .offcanvas-body .navbar-nav .nav-link.active {
+  color: var(--primary);
+}
+
+
+
+@media (max-width: 958px) {
+  /*===========> NAV MENUES  */
+  header nav .offcanvas-body .navbar-nav {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  /*====> NAV TOGGLE BTN */
+  header nav .togl-btn-box {
+    display: block;
+  }
+
+  /*===========> NAV MENUES  */
+  header nav .offcanvas-body .navbar-nav {
+    gap: 10px;
+  }
+
+  /* Nav #rd Box BTN (login/ Connect Wallet) */
+  header nav .nav-endbox .prime-stroke-gr {
+    display: none;
+  }
+
+  header nav .mob-btn {
+    display: grid;
+    margin-top: 20px;
+  }
+
+  /* Offcanvas head */
+  .offcanvas-header {
+    border-bottom: 1px solid #c2c2c2;
+    padding: 25px var(--bs-offcanvas-padding-x);
+  }
+}
+
+/* @media (max-width: 425px) {
+  header nav .logo-box img {
+    width: 120px;
+  }
+}
+@media (max-width: 375px) {
+  header nav .logo-box img {
+    width: 120px;
+  }
+  header nav > .container {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  header nav .nav-endbox {
+    order: 4;
+    display: none;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  header nav > .container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  header nav .togl-btn-box {
+    display: block;
+    text-align: right;
+  }
+  .search-section-sub-a {
+    font-size: 1.8vw;
+    margin-bottom: 15px;
+  }
+
+  .search-section {
+    display: block;
+  }
+  .primary-btn {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #039855;
+    background: #039855;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 10px;
+  }
+  .card-main {
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 390px) {
+
+  header nav .logo-box img {
+    width: 120px;
+  }
+  header nav > .container {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  header nav .nav-endbox {
+    order: 4;
+    display: none;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  header nav > .container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  header nav .togl-btn-box {
+    display: block;
+    text-align: right;
+  }
+  .search-section-sub-a {
+    font-size: 1.8vw;
+    margin-bottom: 15px;
+  }
+
+  .search-section {
+    display: block;
+  }
+  .primary-btn {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #039855;
+    background: #039855;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 10px;
+  }
+  .card-main {
+    margin-bottom: 15px;
+  }
+} */
