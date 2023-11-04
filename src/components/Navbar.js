@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/logo.png"
+import Logo from "../assets/awesome-logo.svg"
 import Button from "./Button";
 import "../styles/Navbar.css"
 import { Link } from "react-router-dom";
@@ -13,7 +13,7 @@ function Navbar() {
             {/* LOGO */}
             <div className="logo-box">
               <Link to="/">
-                <img src={Logo} alt="Paraconf" />
+                <img src={Logo} alt="awesome" />
               </Link>
             </div>
 

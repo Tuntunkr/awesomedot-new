@@ -40,7 +40,6 @@ function Home() {
                   <br /> learning in the polkadot ecosystem.
                 </span>
               </p>
-
               <div className="search-section">
                 <button className="search-section-sub-a">
                   Search Projects
@@ -54,6 +53,7 @@ function Home() {
         </div>
       </div>
       <Card/>
+      {/* <Card/> */}
     </>
   );
 }
