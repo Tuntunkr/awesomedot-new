@@ -3,6 +3,7 @@ import line1 from "../assets/right-line.svg";
 import line2 from "../assets/left-line.svg";
 import "../styles/Home.css";
 import Button from "./Button";
+import Card from "./Card";
 // import {Link} from 'react-router-dom'
 
 function Home() {
@@ -52,6 +53,7 @@ function Home() {
           </section>
         </div>
       </div>
+      <Card/>
     </>
   );
 }

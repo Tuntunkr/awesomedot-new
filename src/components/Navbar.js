@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../assets/logo.png"
 import Button from "./Button";
 import "../styles/Navbar.css"
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -11,9 +12,9 @@ function Navbar() {
           <div className="container">
             {/* LOGO */}
             <div className="logo-box">
-              <a href="#">
+              <Link to="/">
                 <img src={Logo} alt="Paraconf" />
-              </a>
+              </Link>
             </div>
 
             {/* TAGGLE BUTTON */}
@@ -39,9 +40,9 @@ function Navbar() {
             >
               <div className="offcanvas-header">
                 {/* Offcave Logo  */}
-                <a href="#">
+                <Link href={"/"}>
                   <img src={Logo} alt="Paraconf" id="mainnavLabel" />
-                </a>
+                </Link>
 
                 {/* Close Btn */}
                 <button
@@ -56,19 +57,19 @@ function Navbar() {
               <div className="offcanvas-body">
                 <ul className="navbar-nav pe-3">
                   <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">
+                    <Link className="nav-link active" aria-current="page" to="/">
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <Link className="nav-link" to="/project">
                       projects
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <Link className="nav-link" to="/learn">
                       Learn
-                    </a>
+                    </Link>
                   </li>
                 </ul>
 
